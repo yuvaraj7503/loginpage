@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+    
+        }
+        .login-container {
+            background-color:#ffffff;;
+            padding: 90px;
+            width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+         }
+                     
+        
+        img{
+            width: 300px;
+            height: 300px;
+            border: 2px solid #1cd5ee;
+            margin-left: -1%;
+            margin-bottom: -30%;
+        }
+        h1 {
+        color: rgb(8, 139, 8);
+        margin-left: 40%;
+        margin-top: -10%;
+        }
+        input[type="text"], input[type="password"] {
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-left: 40%;
+            margin-top: 2%;
+            margin-bottom: 0%;
+            
+        }
+        button[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 53%;
+            margin-left: 40%;
+            margin-top: 2%;
+        }
+        label[for="name"] {
+
+            margin-left: 40%;
+            margin-top: -2%;
+        }
+
+        label[for="password"]{
+            margin-left: 40%;
+            margin-top: 20%;
+            margin-bottom: -30%;
+        }
+        
+        button[type="button"]:hover {
+            background-color: #0ba012;
+        
+        }
+
+        
+    </style>
+</head>
+<body>
+ 
+    <div class="login-container">
+        <img src="WhatsApp Image 2024-10-24 at 5.24.35 PM.jpeg" alt="gird" >
+  
+   
+        <h1>Login</h1><br>
+        
+               <form action="/submit-login" method="POST">
+            <label for="name" > Username</label>
+            <input type="text" name="username" id="name" placeholder="Username" required> 
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+<br>
+                    <button type="button" onclick="displaylnfo()" >Login</button>
+
+                           </form>
+                           <script src="login.js"></script>
+
+                           <h1 id="output"> </h1>
+    </div>
+</body>
+</html>
